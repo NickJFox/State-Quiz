@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<form id="regForm" action="/action_page.php">
+  <h1>Which U.S. State Do You Belong In?</h1>
+  <br>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab"><h5>Question 1 of 15</h5><span>Do you want to live near the ocean?</span>
+    <p><button type="button" id="yesOcean" onclick="nextPrev(1)">Yes</button></p>
+   <p><button type="button" id="noOcean" onclick="nextPrev(1)">No</button></p>
+  </div>
+  <div class="tab"><h5>Question 2 of 15</h5><span>How about Mountains?</span>
+    <p><button type="button" id="largeMtns" onclick="nextPrev(1)">I want large mountains</button></p>
+   <p><button type="button" id="smallMtns" onclick="nextPrev(1)">I'm fine with smaller mountains & rolling hills</button></p>
+   <p><button type="button" id="noMtns" onclick="nextPrev(1)">I don't need mountains</button></p>
+  </div>
+  <div class="tab"><h5>Question 3 of 15</h5><span>Do you want to live near the desert?</span>
+    <p><button type="button" id="yesDesert" onclick="nextPrev(1)">Yes</button></p>
+   <p><button type="button" id="noDesert" onclick="nextPrev(1)">No</button></p>
+  </div>
+  <div class="tab"><h5>Question 4 of 15</h5><span>Do you want to live near dense forests?</span>
+    <p><button type="button" id="yesForests" onclick="nextPrev(1)">Yes</button></p>
+   <p><button type="button" id="noForests" onclick="nextPrev(1)">No</button></p>
+   </div>
+    <div class="tab"><h5>Question 5 of 15</h5><span>How about the prairie?</span>
+    <p><button type="button" id="yesPrairie" onclick="nextPrev(1)">Yes</button></p>
+   <p><button type="button" id="noPrairie" onclick="nextPrev(1)">No</button></p>
+  </div>
+      <div class="tab"><h5>Question 6 of 15</h5><span>Politics?</span>
+    <p><button type="button" id="liberal" onclick="nextPrev(1)">Liberal</button></p>
+    <p><button type="button" id="mix" onclick="nextPrev(1)">I like a mix</button></p>
+   <p><button type="button" id="conservative" onclick="nextPrev(1)">Conservative</button></p>
+  </div>
+   <div class="tab"><h5>Question 7 of 15</h5><span>Do you like when it rains?</span>
+    <p><button type="button" id="veryRainy" onclick="nextPrev(1)">Very Much</button></p>
+    <p><button type="button" id="moderateRain" onclick="nextPrev(1)">Moderately</button></p>
+   <p><button type="button" id="noRain" onclick="nextPrev(1)">No, I don't like rain</button></p>
+  </div>
+  <div class="tab"><h5>Question 8 of 15</h5><span>How about humidity?</span>
+    <p><button type="button" id="highHumid" onclick="nextPrev(1)">I'm good with high humidity</button></p>
+    <p><button type="button" id="moderateHumid" onclick="nextPrev(1)">Moderately</button></p>
+   <p><button type="button" id="noHumid" onclick="nextPrev(1)">No, I don't like humidity</button></p>
+  </div>
+   <div class="tab"><h5>Question 9 of 15</h5><span>How about the Sun?</span>
+    <p><button type="button" id="highSun" onclick="nextPrev(1)">I need sunny weather</button></p>
+    <p><button type="button" id="moderateSun" onclick="nextPrev(1)">Moderate Sun</button></p>
+   <p><button type="button" id="noSun" onclick="nextPrev(1)">I'm fine with overcast weather</button></p>
+  </div>
+     <div class="tab"><h5>Question 10 of 15</h5><span>Do you like snow?</span>
+    <p><button type="button" id="highSnow" onclick="nextPrev(1)">I love snow!</button></p>
+    <p><button type="button" id="moderateSnow" onclick="nextPrev(1)">On occasion</button></p>
+   <p><button type="button" id="noSnow" onclick="nextPrev(1)">I can live without it</button></p>
+  </div>
+<div class="tab"><h5>Question 11 of 15</h5><span>How do you like Summer?</span>
+    <p><button type="button" id="hotSummer" onclick="nextPrev(1)">Hot!</button></p>
+    <p><button type="button" id="warmSummer" onclick="nextPrev(1)">Warm</button></p>
+   <p><button type="button" id="mildSummer" onclick="nextPrev(1)">Mild</button></p>
+  </div>
+  <div class="tab"><h5>Question 12 of 15</h5><span>How do you like Spring?</span>
+    <p><button type="button" id="hotSpring" onclick="nextPrev(1)">Hot</button></p>
+    <p><button type="button" id="warmSpring" onclick="nextPrev(1)">Warm</button></p>
+   <p><button type="button" id="mildSpring" onclick="nextPrev(1)">Mild</button></p>
+  </div>
+    <div class="tab"><h5>Question 13 of 15</h5><span>How do you like Fall?</span>
+    <p><button type="button" id="warmFall" onclick="nextPrev(1)">Warm</button></p>
+    <p><button type="button" id="mildFall" onclick="nextPrev(1)">Mild</button></p>
+   <p><button type="button" id="chillyFall" onclick="nextPrev(1)">Chilly</button></p>
+  </div>
+ <div class="tab"><h5>Question 14 of 15</h5><span>How do you like Winter?</span>
+    <p><button type="button" id="warmWinter" onclick="nextPrev(1)">Warm</button></p>
+    <p><button type="button" id="mildWinter" onclick="nextPrev(1)">Mild</button></p>
+   <p><button type="button" id="freezingWinter" onclick="nextPrev(1)">Freezing</button></p>
+  </div>
+   <div class="tab"><h5>Question 15 of 15</h5><span>Do you like having access to big cities or prefer sparsely populated areas?</span>
+    <p><button type="button" id="bigCities" onclick="nextPrev(1)">Access to big cities</button></p>
+    <p><button type="button" id="sparselyPopulated" onclick="nextPrev(1)">Sparsely populated</button></p>
+  </div>
+     <div class="tab">
+     <p id="scoreDisplay"></p>
+     <div class="grid">
+    <img class="img1" id="img1" src=" " alt="Image 1">
+    <img class="img2" id="img2" src=" " alt="Image 2">
+    <img class="img3" id="img3" src=" " alt="Image 3">
+    <img class="img4" id="img4" src=" " alt="Image 4">
+  <div class="hopeyoulike"><p id="statefoodmessage"></p></div>
+  <img class="statefood" id="statefood" src=" " alt="StateFood">
+</div>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <br>
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
