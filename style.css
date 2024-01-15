@@ -117,3 +117,58 @@
     font-size: 24px;
     font-weight: bold;
   }
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 428px) {
+
+  body {
+    background-color: #f1f1f1;
+    background-image: url(https://wallpaperaccess.com/full/89093.jpg);
+    image-rendering: pixelated;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  #regForm {
+    margin-top: 50%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .step {
+    height: 8px;
+    width: 8px;
+  }
+
+  .tab span {
+    font-size: 16px;
+  }
+
+  #scoreDisplay {
+    font-size: 20px;
+  }
+
+  .hopeyoulike {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid img {
+    height: auto;
+  }
+}
